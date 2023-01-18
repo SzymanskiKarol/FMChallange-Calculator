@@ -129,8 +129,14 @@ header {
 .result-container {
     background-color: var(--screen-background);
     color: var(--text2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.5rem;
     margin: 1rem 0;
+    height: 140px;
     text-align: right;
+    padding: 1rem;
 }
 
 .buttons-container {
@@ -146,6 +152,10 @@ header {
 
 h2 {
     font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
 }
 
 p {
