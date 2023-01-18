@@ -167,7 +167,7 @@ p {
 
 .btn {
     font-size: 2rem;
-    padding: .75rem 1.5rem .5rem 1.5rem;
+    /* padding: .75rem 1.5rem .5rem 1.5rem; */
     border: none;
     border-radius: .5rem;
     font-family: 'League Spartan', sans-serif;
@@ -177,6 +177,11 @@ p {
     background-color: var(--key-background);
     box-shadow: 0 3px 0 var(--key-shadow);
     cursor: pointer;
+}
+
+.btn:not(.reset-btn, .result-btn) {
+    width: 80px;
+    height: 50px;
 }
 
 .reset-btn {
@@ -233,4 +238,15 @@ p {
 
 .theme-3::after {
     left: 65px;
+}
+
+
+@media (max-width:450px) {
+    main {
+        width: 95%;
+    }
+
+    .btn:not(.result-btn, .reset-btn) {
+        width: 100%;
+    }
 }
