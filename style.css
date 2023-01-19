@@ -94,7 +94,7 @@ body {
 /* --------CONTAINERS------------ */
 
 main {
-    max-width: 600px;
+    max-width: 416px;
     margin: 0 auto;
 }
 
@@ -137,6 +137,8 @@ header {
     height: 140px;
     text-align: right;
     padding: 1rem;
+    outline: none;
+    overflow: hidden;
 }
 
 .buttons-container {

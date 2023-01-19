@@ -12,7 +12,7 @@ let result = '';
 // Functions
 function displayNumbers() {
     if (this.textContent === '.' && resultNumber.innerHTML.includes('.')) return;
-    if (this.textContent === '.' && resultNumber.innerHTML === '') return resultNumber.innerHTML = '.0'
+    if (this.textContent === '.' && resultNumber.innerHTML === '') return resultNumber.innerHTML = '0.'
 
     resultNumber.innerHTML += this.textContent;
 }
@@ -32,6 +32,10 @@ function operate() {
     firstNumber.innerHTML = resultNumber.innerHTML;
     mathSign.innerHTML = this.textContent;
     resultNumber.innerHTML = '';
+}
+
+function strip(number) {
+    return (parseFloat(number.toPrecision(12)));
 }
 
 function showResult() {
@@ -56,7 +60,7 @@ function showResult() {
             break;
     }
 
-    resultNumber.innerHTML = result;
+    resultNumber.innerHTML = strip(result);
     firstNumber.innerHTML = '';
     mathSign.innerHTML = '';
 }
